@@ -1,0 +1,9 @@
+<h1>Recipes list</h1>
+
+<% @list.each_with_index do |recipe, index| %>
+  <p><h2><%= index + 1 %>. <%= recipe.title %></h2></p>
+  <p>Prep Time: <%= recipe.prep_time%></p>
+  <p>Cook Time: <%= recipe.cook_time%></p>
+  <p>Description: <%= recipe.description%></p>
+  <p>Difficulty: <%= recipe.difficulty%></p>
+<% end %>

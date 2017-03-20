@@ -1,0 +1,7 @@
+<h1>Search</h1>
+
+<% @recipes_array.each_with_index do |recipe, index| %>
+  <%= index + 1%>. Title: <%= recipe[:title] %> <br>
+  <a href="http://www.letscookfrench.com/<%= recipe[:link] %>">Link</a> <br>
+  <a href="/add_from_website?link=<%=recipe[:link]%>">Add to list!</a> <br> <br>
+<% end %>
