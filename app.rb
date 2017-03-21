@@ -8,7 +8,7 @@ require_relative 'repo'
 require_relative 'recipe'
 require_relative 'lets_cook_french'
 
-set :bind, '0.0.0.0'
+# set :bind, '0.0.0.0'
 
 configure :development do
   use BetterErrors::Middleware
